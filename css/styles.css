@@ -38,7 +38,7 @@
     h5 {
         color: #DCDCDC;
         font-family: 'Oswald', sans-serif;
-        font-size: 16px;
+        font-size: 24px;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -82,15 +82,19 @@
     }
 
 /* Homepage */
-    .carousel-caption {
+    .captionCard {
         background-color: #2F4F4F;
-        bottom: 100px;
+        min-height: 175px;
         opacity: .9;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding: 40px;
+    }
+    .captionCard h5, .captionCard p {
+
+    }
+    .carousel-caption {
         position: absolute;
         text-align: left;
-        top: 65%;
+        top: 60%;
         width: 25%;
     }
     #carouselContainer {
@@ -101,13 +105,18 @@
         height: 10px;
         border-radius: 100%;
     }
-    .carousel-inner, .carousel-item, .d-block {
+    .carousel-inner, .carousel-item {
         height: 100%;
+    }
+    .carousel-inner img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .link, p {
         color: #DCDCDC;
         font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
+        font-size: 18px;
     }
     .link:hover {
         color: #8B4513;
@@ -179,19 +188,27 @@
         color: #DCDCDC;
         display: inline-block;
         font-family: 'Oswald', sans-serif;
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: 2px;
-        padding: 30px 0 30px 40px;
+        padding: 0 0 0 55px;
         text-transform: uppercase;
+    }
+    .footerContainer {
+        align-items: center;
+        display: flex;
     }
     footer .socialMediaConnect {
         display: block;
-        padding: 40px 42px 40px 0;
+        padding: 40px 55px 40px 0;
     }
     footer .socialMediaLink {
         color: #8B4513;
         font-size: 25px;
         margin-left: 15px;
+        text-decoration: none;
+    }
+    footer .socialMediaLink:hover {
+        color: #A9A9A9;
     }
     footer span {
         display: block;
