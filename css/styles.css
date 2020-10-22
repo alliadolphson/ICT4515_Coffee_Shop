@@ -92,9 +92,9 @@
 
     }
     .carousel-caption {
+        bottom: 10%;
         position: absolute;
         text-align: left;
-        top: 60%;
         width: 25%;
     }
     #carouselContainer {
