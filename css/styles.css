@@ -1,0 +1,198 @@
+/* Week Six: Home Page */
+/* Website for Brewed Awakening Coffee */
+/* Allison Adolphson ICT 4515 Usability Design for Websites */
+/* CSS File */
+
+/* Table of Contents 
+---------------------------------------
+- Base Styles
+- Navigation Bar
+- Homepage
+- About
+- Footer
+*/
+
+/* Base Styles */
+    article.homepage {
+        height: calc(100vh - 205px);
+        margin-top: 105px;
+    }
+    article.subpage {
+        background-color: #DCDCDC;
+        margin-top: 105px;
+    }
+    body.homepage {
+        overflow: hidden;
+    }
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-style: bold;
+        letter-spacing: 2px;
+    }
+    h5 {
+        color: #DCDCDC;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+    img {
+        opacity: .85;
+    }
+
+/* Navigation */
+    body.homepage nav.navbar {
+        padding: 0;
+    }
+    .logo {
+        height: 95px;
+    }
+    .navbar {
+        background-color: #000000;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    .navbar-nav {
+        margin-right: 15px;
+        padding: 0 40px 0 0;
+        text-align: center;
+    }
+    .nav-link {
+        color: #DCDCDC;
+    }
+    .nav-link.active {
+        color: #8B4513;
+        font-weight: bold;
+    }
+    .nav-link:hover {
+        color: #A9A9A9;
+    }
+
+/* Homepage */
+    .carousel-caption {
+        background-color: #2F4F4F;
+        bottom: 100px;
+        opacity: .9;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: absolute;
+        text-align: left;
+        top: 65%;
+        width: 25%;
+    }
+    #carouselContainer {
+        height: 100%;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .carousel-inner, .carousel-item, .d-block {
+        height: 100%;
+    }
+    .link, p {
+        color: #DCDCDC;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+    .link:hover {
+        color: #8B4513;
+    }
+
+/* About */
+.aboutBanner {
+    align-items: center;
+    background-image: url("/images/assets/Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    opacity: .85;
+}
+.aboutBannerCard {
+    background-color: #2F4F4F;
+    opacity: .9;
+    text-align: center;
+    padding: 0 50px 20px 50px;
+    width: 50vw;
+}
+.aboutImages {
+    display: flex;
+}
+.column {
+    display: inline-block;
+    width: 33%;
+}
+.columnCard {
+    display: inline-block;
+    width: 33%;
+}
+.columnCard p {
+    color: #000000;
+}
+.columnDefinition {
+    flex-grow:  0;
+    flex-shrink: 0;
+    flex-basis: 33rem;
+}
+.columnImages {
+    display: inline-grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.definition {
+    padding: 20px 20px 20px 20px;
+}
+.smSquare {
+    opacity: .85;
+}
+.title {
+    height: 12vh;
+    opacity: .9;
+}
+
+/* Footer */
+    .footer {
+        background-color: #000000;
+        display: flex;
+        height: 105px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer .footerDetails {
+        color: #DCDCDC;
+        display: inline-block;
+        font-family: 'Oswald', sans-serif;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 30px 0 30px 40px;
+        text-transform: uppercase;
+    }
+    footer .socialMediaConnect {
+        display: block;
+        padding: 40px 42px 40px 0;
+    }
+    footer .socialMediaLink {
+        color: #8B4513;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    footer span {
+        display: block;
+    }
