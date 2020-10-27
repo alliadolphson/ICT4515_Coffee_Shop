@@ -7,8 +7,6 @@
 ---------------------------------------
 - Base Styles
 - Navigation Bar
-- Homepage
-- About
 - Footer
 */
 
@@ -81,103 +79,6 @@ img {
 .nav-link:hover {
     color: #A9A9A9;
 }
-
-/* Banners */
-.banner {
-    align-items: center;
-    background-image: url("/images/assets/Banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: right;
-    display: flex;
-    height: 30vh;
-    justify-content: center;
-    opacity: .85;
-}
-.bannerCard {
-    background-color: #2F4F4F;
-    opacity: .9;
-    text-align: center;
-    padding: 0 50px 20px 50px;
-    width: 50vw;
-}
-.title {
-    height: 120px;
-    opacity: .9;
-}
-
-/* About */
-.aboutContent {
-    display: flex;
-    padding: 0 25px 25px 25px;
-}
-.aboutImages {
-    display: flex;
-    overflow-x: hidden;
-    width: 100%;
-}
-.alignText {
-    display: inline-flex;
-}
-.cardText {
-    padding-top: 25px;
-}
-.column {
-    display: inline-block;
-    width: 33%;
-}
-.columnCard {
-    display: inline-block;
-    padding: 0 25px 0 25px;
-    width: 33%;
-}
-.columnCard p {
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    text-align: justify;
-}
-.columnCard .link {
-    color: #2F4F4F;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-}
-.columnCard .link:hover {
-    color: #8B4513;
-}
-.columnImages {
-    display: flex;
-    align-items: center;
-    padding-right: 50px;
-}
-.definition {
-    padding: 50px 50px 50px 50px;
-}
-.imgText {
-    position: relative;
-    text-align: center;
-}
-.imgTextBanner {
-    background-color: #2F4F4F;
-    left: 50%;
-    opacity: .9;
-    position: absolute;
-    padding: 10px 0 8px 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 45%;
-}
-.smSquare {
-    object-fit: cover;
-    opacity: .85;
-    padding: 20px 0 20px 20px;
-    width: 100%;
-}
-.textRec {
-    width: 75%;
-}
-
 /* Footer */
 .footer {
     background-color: #000000;
@@ -215,109 +116,23 @@ footer .socialMediaLink:hover {
 footer span {
     display: block;
 }
-
 /* Media Queries */
 @media (min-width: 769px) {
-/* Properties for Large Display */
-}
+    /* Properties for Large Display */
+    }
 @media (max-width: 780px) {
     /* Properties for Medium Display */
-    /* Homepage */
-    .carousel-caption {
-        left: 50%;
-        position: absolute;
-        text-align: center;
-        top: 65%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-    }
-    .carousel-caption p {
-        font-size: 14px;
-    }
-    .link {
-        font-size: 14px;
-        text-decoration: underline;
-    }
-    .logo {
-        margin: 0;
-        width: 300px;
-    }
-    #navbarNavAltMarkup {
-        margin-left: -25px;
-    }
-    .navbar-nav {
-        margin-right: 25px;
-    }
-    /* About */
-    .aboutContent {
-        display: block;
-    }
-    .bannerCard {
-        width: 75vw;
-    }
-    .columnCard {
-        margin-bottom: 25px;
-        width: 100%;
-    }
-    .columnCard p:last-child {
-        margin: 0;
-    }
-    .columnImages {
-        display: grid;
-        grid-column-gap: 25px;
-        grid-template-columns: 1fr 1fr;
-    }
-    .smSquare {
-        padding: 0;
-    }
 }
 @media (max-width: 480px) {
     /* Properties for Small Display */
-    /* Homepage */
-    article.homepage {
-        height: calc(100vh - 262px);
+    /* Navigation */
+    .navbar-brand {
+        margin: 0;
+        margin-left: -25px
     }
-    .carousel-caption {
-        left: 50%;
-        position: absolute;
-        text-align: center;
-        top: 45%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-    }
-    .carousel-caption p {
-        font-size: 14px;
-    }
-    h5 {
-        font-size: 21px;
-    }
-    .footer {
-        display: inline-block;
-        height: 157px;
-        width: 100%;
-    }
-    .footerContainer {
-        display: flex;
-        justify-content: space-between;
-        padding: 25px;
-    }
-    .footer .footerDetails{
-        padding: 0;
-    }
-    .footer .footerDetails.hours {
-        text-align: right;
-    }
-    .footer .socialMediaConnect {
-        display: flex;
-        justify-content: center;
-        padding: 0 0 25px 0;
-    }
-    .footer .socialMediaLink {
-        font-size: 18px;
-    }
-    .link {
-        font-size: 14px;
-        text-decoration: underline;
+    .navbar-toggler {
+        margin: 0;
+        margin-right: 5px;
     }
     .logo {
         width: 300px;
@@ -328,54 +143,22 @@ footer span {
     }
     .navbar .navbar-collapse {
         text-align: center;
-      }
-    .navbar-toggler {
-        margin-right: 20px;
-    }
+        }
     .navbar-toggler-icon {
         color: #A9A9A9;
-    }
-    /* About */
-    .bannerCard {
-        padding: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .bannerCard h5 {
-        font-size: 12px;
-        margin-top: -20px;
-    }
-    .aboutContent {
-        margin-top: 25px;
-    }
-    .columnImages {
-        display: none;
-    }
-    .definition {
-        display: none;
-    }
-    .title {
-        height: 100px;
     }
 }
 @media (max-height: 420px) {
     /* Properties for Medium Display */
-    /* Homepage */
-    .carousel-caption {
-        left: 50%;
-        position: absolute;
-        text-align: center;
-        top: 25%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-    }
+    /* Navigation */
     .navbar-nav {
         padding: 0;
         margin: 0;
+        margin-right: 20px;
     }
     .navbar .navbar-collapse {
         text-align: center;
-      }
+        }
     .navbar-toggler {
         margin-right: 20px;
     }
