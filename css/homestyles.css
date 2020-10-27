@@ -1,0 +1,184 @@
+/* Week Six: Home Page */
+/* Website for Brewed Awakening Coffee */
+/* Allison Adolphson ICT 4515 Usability Design for Websites */
+/* CSS File */
+
+/* Table of Contents 
+---------------------------------------
+- Base Styles
+- Navigation Bar
+- Homepage
+- About
+- Footer
+*/
+
+/* Base Styles */
+
+/* Navigation */
+body.homepage nav.navbar {
+    padding: 0;
+}
+
+/* Homepage */
+.captionCard {
+    background-color: #2F4F4F;
+    min-height: 175px;
+    opacity: .9;
+    padding: 40px;
+}
+.carousel-caption {
+    bottom: 10%;
+    position: absolute;
+    text-align: left;
+    width: 25%;
+}
+#carouselContainer {
+    height: 100%;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-inner, .carousel-item {
+    height: 100%;
+}
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.link, p {
+    color: #DCDCDC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.link:hover {
+    color: #8B4513;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+    /* Properties for Large Display */
+    }
+    @media (max-width: 780px) {
+        /* Properties for Medium Display */
+        /* Homepage */
+        .carousel-caption {
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            top: 65%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+        }
+        .carousel-caption p {
+            font-size: 14px;
+        }
+        .link {
+            font-size: 14px;
+            text-decoration: underline;
+        }
+        .logo {
+            margin: 0;
+            width: 300px;
+        }
+        #navbarNavAltMarkup {
+            margin-left: -25px;
+        }
+        .navbar-nav {
+            margin-right: 25px;
+        }
+    }
+    @media (max-width: 480px) {
+        /* Properties for Small Display */
+        /* Homepage */
+        article.homepage {
+            height: calc(100vh - 262px);
+        }
+        .carousel-caption {
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+        }
+        .carousel-caption p {
+            font-size: 14px;
+        }
+        h5 {
+            font-size: 21px;
+        }
+        .footer {
+            display: inline-block;
+            height: 157px;
+            width: 100%;
+        }
+        .footerContainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+        }
+        .footer .footerDetails{
+            padding: 0;
+        }
+        .footer .footerDetails.hours {
+            text-align: right;
+        }
+        .footer .socialMediaConnect {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 25px 0;
+        }
+        .footer .socialMediaLink {
+            font-size: 18px;
+        }
+        .link {
+            font-size: 14px;
+            text-decoration: underline;
+        }
+        .logo {
+            margin: -20px;
+            width: 300px;
+        }
+        .navbar-nav {
+            padding: 0;
+            margin: 0;
+        }
+        .navbar .navbar-collapse {
+            text-align: center;
+          }
+        .navbar-toggler {
+            margin-right: 20px;
+        }
+        .navbar-toggler-icon {
+            color: #A9A9A9;
+        }
+    }
+    @media (max-height: 420px) {
+        /* Properties for Medium Display */
+        /* Homepage */
+        .carousel-caption {
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            top: 25%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+        }
+        .navbar-nav {
+            padding: 0;
+            margin: 0;
+        }
+        .navbar .navbar-collapse {
+            text-align: center;
+          }
+        .navbar-toggler {
+            margin-right: 20px;
+        }
+        .navbar-toggler-icon {
+            color: #A9A9A9;
+        }
+    }

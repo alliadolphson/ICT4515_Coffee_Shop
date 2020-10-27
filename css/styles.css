@@ -55,9 +55,6 @@ img {
 }
 
 /* Navigation */
-body.homepage nav.navbar {
-    padding: 0;
-}
 .logo {
     height: 95px;
 }
@@ -85,46 +82,8 @@ body.homepage nav.navbar {
     color: #A9A9A9;
 }
 
-/* Homepage */
-.captionCard {
-    background-color: #2F4F4F;
-    min-height: 175px;
-    opacity: .9;
-    padding: 40px;
-}
-.carousel-caption {
-    bottom: 10%;
-    position: absolute;
-    text-align: left;
-    width: 25%;
-}
-#carouselContainer {
-    height: 100%;
-}
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-.carousel-inner, .carousel-item {
-    height: 100%;
-}
-.carousel-inner img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.link, p {
-    color: #DCDCDC;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-.link:hover {
-    color: #8B4513;
-    text-decoration: underline;
-}
 /* Banners */
-.aboutBanner {
+.banner {
     align-items: center;
     background-image: url("/images/assets/Banner.jpg");
     background-repeat: no-repeat;
@@ -136,7 +95,7 @@ body.homepage nav.navbar {
     justify-content: center;
     opacity: .85;
 }
-.aboutBannerCard {
+.bannerCard {
     background-color: #2F4F4F;
     opacity: .9;
     text-align: center;
@@ -261,9 +220,6 @@ footer span {
 @media (min-width: 769px) {
 /* Properties for Large Display */
 }
-@media (min-width: 481px) and (max-width: 768px) {
-/* Properties for Med & Small Display */
-}
 @media (max-width: 780px) {
     /* Properties for Medium Display */
     /* Homepage */
@@ -291,6 +247,28 @@ footer span {
     }
     .navbar-nav {
         margin-right: 25px;
+    }
+    /* About */
+    .aboutContent {
+        display: block;
+    }
+    .bannerCard {
+        width: 75vw;
+    }
+    .columnCard {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .columnCard p:last-child {
+        margin: 0;
+    }
+    .columnImages {
+        display: grid;
+        grid-column-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .smSquare {
+        padding: 0;
     }
 }
 @media (max-width: 480px) {
@@ -356,6 +334,28 @@ footer span {
     }
     .navbar-toggler-icon {
         color: #A9A9A9;
+    }
+    /* About */
+    .bannerCard {
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bannerCard h5 {
+        font-size: 12px;
+        margin-top: -20px;
+    }
+    .aboutContent {
+        margin-top: 25px;
+    }
+    .columnImages {
+        display: none;
+    }
+    .definition {
+        display: none;
+    }
+    .title {
+        height: 100px;
     }
 }
 @media (max-height: 420px) {
