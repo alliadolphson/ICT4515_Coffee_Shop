@@ -116,12 +116,24 @@ footer .socialMediaLink:hover {
 footer span {
     display: block;
 }
+
 /* Media Queries */
 @media (min-width: 769px) {
     /* Properties for Large Display */
     }
 @media (max-width: 780px) {
     /* Properties for Medium Display */
+    /* Navigation */
+    .logo {
+        margin: 0;
+        width: 300px;
+    }
+    #navbarNavAltMarkup {
+        margin-left: -25px;
+    }
+    .navbar-nav {
+        margin-right: 25px;
+    }
 }
 @media (max-width: 480px) {
     /* Properties for Small Display */
@@ -146,6 +158,31 @@ footer span {
         }
     .navbar-toggler-icon {
         color: #A9A9A9;
+    }
+    /* Footer */
+    .footer {
+        display: inline-block;
+        height: 157px;
+        width: 100%;
+    }
+    .footerContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .footer .footerDetails{
+        padding: 0;
+    }
+    .footer .footerDetails.hours {
+        text-align: right;
+    }
+    .footer .socialMediaConnect {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 25px 0;
+    }
+    .footer .socialMediaLink {
+        font-size: 18px;
     }
 }
 @media (max-height: 420px) {
