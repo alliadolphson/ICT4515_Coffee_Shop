@@ -15,12 +15,19 @@ article.homepage {
     height: calc(100vh - 205px);
     margin-top: 105px;
 }
-article.subpage {
+article.subpage, div.subpage {
     background-color: #DCDCDC;
     margin-top: 105px;
 }
 body.homepage {
     overflow: hidden;
+}
+h1 {
+    color: #DCDCDC;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 h3 {
     display: inline;
@@ -34,13 +41,6 @@ h4 {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
-}
-h5 {
-    color: #DCDCDC;
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
 h6 {
     font-family: 'Open Sans', sans-serif;

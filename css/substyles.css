@@ -8,6 +8,10 @@
 - Base Styles
 - Navigation Bar
 - About
+- Menu
+- Shop
+- Contact
+- Gallery
 - Footer
 */
 
@@ -30,6 +34,21 @@
     text-align: center;
     padding: 0 50px 20px 50px;
     width: 50vw;
+}
+.mapBanner {
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+}
+.mapBanner iframe {
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.mapContainer {
+    height: 30vh;
 }
 .title {
     height: 120px;
@@ -105,6 +124,98 @@
 }
 .textRec {
     width: 75%;
+}
+
+/* Menu */
+
+/* Shop */
+
+/* Contact */
+article.subpage2 {
+    height: calc(100vh - 205px);
+    margin-top: 105px;
+}
+.bi {
+    padding-bottom: 5px;
+}
+.cCLeft {
+    padding-right: 10px;
+    width: 40%;
+}
+.cCRight {
+    padding-left: 15px;
+    text-align: center;
+    width: 20%;
+}
+.contactBtn {
+    background-color: #2F4F4F;
+    border: none;
+    color: #DCDCDC;
+    font-size: 16px;
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+.contactBtn:hover {
+    color: #fff;
+}
+.contact {
+    align-items: center;
+    background-color: #DCDCDC;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: right;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    opacity: .85;
+}
+.contactCard {
+    background-color: #2F4F4F;
+    opacity: .9;
+    text-align: center;
+    padding: 0 50px 20px 50px;
+    width: 50vw;
+}
+.contactContent {
+    display: flex;
+    justify-content: center;
+}
+.contactColumn {
+    padding-top: 50px;
+}
+.contactForm {
+    background-color: #DCDCDC;
+    padding: 0 20px 20px 20px;
+}
+.contactItem {
+    padding-bottom: 25px;
+}
+.contactTitle {
+    text-align: center;
+}
+.contactTitle h1 {
+    color: #8B4513;
+    margin: 0;
+}
+.form-control {
+    background-color: #DCDCDC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.submitContainer {
+    text-align: center;
+    width: 100%;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #2F4F4F;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(47, 79, 79, .8);
 }
 
 /* Media Queries */
