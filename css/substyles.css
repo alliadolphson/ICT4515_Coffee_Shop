@@ -127,6 +127,50 @@
 }
 
 /* Menu */
+.menuFilterBtn {
+    background-color: #000;
+    border: none;
+    color: #DCDCDC;
+    font-size: 16px;
+    margin: 0 10px 0 10px;
+    opacity: .85;
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+}
+.menuFilterBtn:hover {
+    color: #fff;
+}
+.menuFilterRow {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.menuCard {
+    background-color: #000;
+    opacity: .85;
+    padding: 25px;
+}
+.menuCard h1 {
+    border-bottom: 2px solid #8B4513;
+    color: #8B4513;
+}
+.menuCard h2 {
+    color: #494949;
+}
+.menuCard p {
+    color: #DCDCDC;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.menuGrid {
+    column-gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    row-gap: 25px;
+}
 
 /* Shop */
 

@@ -29,6 +29,13 @@ h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+h2 {
+    color: #DCDCDC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    font-style: italic;
+}
 h3 {
     display: inline;
     font-family: 'Open Sans', sans-serif;
