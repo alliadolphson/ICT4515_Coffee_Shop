@@ -18,7 +18,7 @@
 /* Banners */
 .banner {
     align-items: center;
-    background-image: url("/images/assets/Banner.jpg");
+    background-image: url("../images/assets/Banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
