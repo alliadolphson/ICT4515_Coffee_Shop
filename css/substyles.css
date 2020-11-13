@@ -159,6 +159,14 @@
 .menuCard h2 {
     color: #494949;
 }
+.menuCard h3 {
+    color: #DCDCDC;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-transform: uppercase;
+}
 .menuCard p {
     color: #DCDCDC;
     margin: 0;
