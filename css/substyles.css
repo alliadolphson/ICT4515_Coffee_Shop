@@ -84,7 +84,6 @@
     color: #000000;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    text-align: justify;
 }
 .columnCard .link {
     color: #2F4F4F;
@@ -180,12 +179,15 @@
     row-gap: 25px;
 }
 
-/* Shop */
-
 /* Contact */
 article.subpage2 {
-    height: calc(100vh - 205px);
+    background-color: #DCDCDC;
+    min-height: calc(100vh - 205px);
     margin-top: 105px;
+}
+body.subpage2 {
+    min-height: 100vh;
+    overflow-y: hidden;
 }
 .bi {
     padding-bottom: 5px;
